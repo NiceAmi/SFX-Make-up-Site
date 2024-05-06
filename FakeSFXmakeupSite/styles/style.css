@@ -1,0 +1,251 @@
+body {
+  background-color: black;
+  color: antiquewhite;
+}
+
+.headline {
+  height: 100px;
+  width: 100%;
+  background-image: url(../media/pics/title.jpg);
+  opacity: 0.6;
+  text-align: center;
+  font-family: 'Creepster', cursive;
+  color: red;
+  font-size: xx-large;
+  display: inline block
+}
+
+.logo img {
+  display: inline;
+  float: right;
+  height: 100px;
+  width: 100px;
+}
+
+.all {
+  display: flex;
+}
+
+ul {
+  list-style-type: none;
+  height: fit-content;
+  width: fit-content;
+  margin-left: 320px;
+}
+
+li {
+  display: inline-block;
+  margin: auto 8px;
+}
+
+ul li a {
+  display: block;
+  position: relative;
+  padding: 5px;
+  font-size: 18px;
+  font-family: serif;
+  color: antiquewhite;
+  transition: 0.5s;
+}
+
+ul:hover li a {
+  transform: scale(2);
+  opacity: 0.2;
+  filter: blur(1px);
+}
+
+ul li a:hover {
+  transform: scale(2);
+  opacity: 1;
+  filter: blur(0);
+  color: #f50303;
+}
+
+.info {
+  text-align: center;
+  width: 800px;
+  height: fit-content;
+  display: inline;
+  margin: 5px;
+  font-family: 'Indie Flower', cursive;
+  color: whitesmoke;
+  margin: auto;
+}
+
+.info h1 {
+  text-decoration: underline;
+}
+
+.photos {
+  position: relative;
+  width: 320px;
+  margin: 100px auto 0 auto;
+  perspective: 3500px;
+  padding-bottom: 200px;
+
+}
+
+.carousel {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  animation: rotate360 60s infinite forwards linear;
+  &:hover {
+    -webkit-animation-play-state: paused;
+  }
+}
+
+.carousel__face {
+  position: absolute;
+  width: 300px;
+  height: 400px;
+  top: 20px;
+  left: 10px;
+  right: 10px;
+  background-size: cover;
+}
+
+.carousel__face:nth-child(1) {
+  background-image: url(../media/pics/monster1.jpg);
+  transform: rotateY(0deg) translateZ(430px);
+}
+
+.carousel__face:nth-child(2) {
+  background-image: url(../media/pics/monster2.jpg);
+  transform: rotateY(40deg) translateZ(430px);
+}
+
+.carousel__face:nth-child(3) {
+  background-image: url(../media/pics/monster3.jpg);
+  transform: rotateY(80deg) translateZ(430px);
+}
+
+.carousel__face:nth-child(4) {
+  background-image: url(../media/pics/monster4.jpg);
+  transform: rotateY(120deg) translateZ(430px);
+}
+
+.carousel__face:nth-child(5) {
+  background-image: url(../media/pics/monster5.jpg);
+  transform: rotateY(160deg) translateZ(430px);
+}
+
+.carousel__face:nth-child(6) {
+  background-image: url(../media/pics/monster6.jpg);
+  transform: rotateY(200deg) translateZ(430px);
+}
+
+.carousel__face:nth-child(7) {
+  background-image: url(../media/pics/monster7.jpg);
+  transform: rotateY(240deg) translateZ(430px);
+}
+
+.carousel__face:nth-child(8) {
+  background-image: url(../media/pics/monster8.jpg);
+  transform: rotateY(280deg) translateZ(430px);
+}
+
+.carousel__face:nth-child(9) {
+  background-image: url(../media/pics/monster9.jpg);
+  transform: rotateY(320deg) translateZ(430px);
+}
+
+@keyframes rotate360 {
+  from {
+    transform: rotateY(0deg);
+  }
+
+  to {
+    transform: rotateY(-360deg);
+  }
+}
+
+.homeimg {
+  background-image: url(../media/pics/rick.webp);
+  width: 890px;
+  height: 500px;
+}
+
+.wellcome {
+  text-align: center;
+  width: 350px;
+  height: fit-content;
+  font-family: 'Indie Flower', cursive;
+  font-size: xx-large;
+  word-wrap: break-word;
+
+}
+
+footer {
+  display: block;
+  background-image: url(../media/pics/footer.jpg);
+  opacity: 0.7;
+  position: fixed;
+  bottom: 0%;
+  width: 100%;
+  height: fit-content;
+  text-align: center;
+  color: antiquewhite;}
+
+.iframe{
+padding-right: 50px;}
+
+.iframe li {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: burlywood;
+  text-decoration: underline;
+}
+
+.photos h1 {
+  font-family: serif;
+  font-size: 50px;
+  font-weight: 600;
+  background-image: linear-gradient(to left, #fc1302, #f7a9a9);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.container3 h1 {
+  font-family: serif;
+  font-size: 50px;
+  font-weight: 600;
+  background-image: linear-gradient(to left, #fc1302, #f7a9a9);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-align: center;
+}
+
+.findus {
+  height: 150px;
+  width: 400px;
+  float: left;
+  margin-left: 30px;
+  margin-bottom: 50px;
+}
+
+h5 {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.connect {
+  display: flex;
+  margin: 10px;
+}
+
+.contact {
+  width: 200px;
+  padding: 6px;
+  box-sizing: border-box;
+  color: whitesmoke;
+  padding: 12px 20px;
+  margin-left: 150px;
+
+}
+
+.news {
+  margin-left: 50px;
+}
